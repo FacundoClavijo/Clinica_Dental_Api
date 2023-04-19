@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pacientes/registrar-paciente">Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/odontologos/registrar-odontologo">Odontologos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/turnos/registrar-turno">Turnos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pacientes/listar-pacientes">Listado de Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pacientes/buscar-paciente">Buscar Paciente</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="row">
+    <div class="col-sm-7" style="background-color:#e6fffa; padding:40px; border-radius:3px">
+        <h3>Actualizar Paciente</h3>
+        <form id="put_paciente">
+            <div class="form-group">
+                <label class="control-label" for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre"
+                       th:value="${paciente.getNombre()}" name="nombre" >
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido"
+                       th:value="${paciente.getApellido()}" name="apellido">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="dni">Dni:</label>
+                <input type="text" class="form-control" id="dni"
+                       th:value="${paciente.getDni()}" name="dni">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fechaAlta">Fecha de Alta:</label>
+                <input type="date" th:value="${paciente.getFechaAlta()}" class="form-control" id="fechaAlta" name="fechaAlta">
+            </div>
+            <h3>Datos del domicilio</h3>
+            <div class="form-group">
+                <label class="control-label" for="calle">Calle:</label>
+                <input type="text" class="form-control" id="calle"
+                       th:value="${paciente.getDomicilio.getCalle()}" name="calle">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="numero">Numero:</label>
+                <input type="text" class="form-control" id="numero"
+                       th:value="${paciente.getDomicilio.getNumero()}" name="numero">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="localidad">Localidad:</label>
+                <input type="text" class="form-control" id="localidad"
+                       th:value="${paciente.getDomicilio.getLocalidad()}" name="localidad">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="provincia">Provincia:</label>
+                <input type="text" class="form-control" id="provincia"
+                       th:value="${paciente.getDomicilio.getProvincia()}" name="provincia">
+            </div>
+
+            <button type="submit" class="btn btn-danger" id="btn-put-paciente">Confirmar</button>
+        </form>
+        <div id="response" style="display:none; margin-top:10px">
+        </div>
+    </div>
+</div>
+</div>
+<script src="/js/actualizar_paciente.js"></script>
+</body>
+</html>

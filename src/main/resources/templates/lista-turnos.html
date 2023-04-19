@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pacientes/registrar-paciente">Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/odontologos/registrar-odontologo">Odontologos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/turnos/registrar-turno">Turnos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/turnos/buscar-turno">Buscar turno</a>
+        </li>
+    </ul>
+</nav>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Paciente</th>
+        <th scope="col">Odontologo</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Hora</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="turno : ${turnos}">
+
+        <td th:text="${turno.getId()}"  th:value="${turno.getId()}" id="id-turno"></td>
+        <td th:text="${turno.getPaciente().getNombre()} + ' ' + ${turno.getPaciente().getApellido()}"></td>
+        <td th:text="${turno.getOdontologo().getNombre()} + ' ' + ${turno.getOdontologo().getApellido()}"></td>
+        <td th:text="${turno.getFecha()}"></td>
+        <td th:text="${turno.getHora()}"></td>
+        <td>
+            <button class="btn btn-warning"><a th:href="@{/turnos/actualizar-turno/{id}(id=${turno.id})}" id="put_btn">Editar</a></button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-danger" th:onclick="'eliminarTurno(' + ${turno.id} + ')'">Eliminar</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script src="/js/eliminar_turno.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

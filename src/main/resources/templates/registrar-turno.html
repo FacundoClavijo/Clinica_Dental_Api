@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <ul class="nav nav-pills">
+      <li class="nav-item">
+          <a class="nav-link" href="/index">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/pacientes/registrar-paciente">Pacientes</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/odontologos/registrar-odontologo">Odontologos</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/turnos/registrar-turno">Turnos</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/turnos/listar-turnos">Listado de turnos</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/turnos/buscar-turno">Buscar turno</a>
+      </li>
+  </ul>
+</nav>
+
+<div class="row">
+    <div class="col-sm-7" style="background-color:#e6fffa; padding:40px; border-radius:3px">
+        <h3>Agregar turno</h3>
+        <form id="add_new_turno">
+            <div class="form-group">
+                <label class="control-label" for="paciente">Nro Paciente:</label>
+                <input type="number" class="form-control" id="paciente"
+                       placeholder="Ingrese el numero de paciente" name="paciente">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="odontologo">Nro Odontologo:</label>
+                <input type="number" class="form-control" id="odontologo"
+                       placeholder="Ingrese el numero de odontologo" name="odontologo">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fecha">Fecha:</label>
+                <input type="date" class="form-control" id="fecha"
+                       placeholder="Ingrese fecha" name="fecha">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="hora">Hora:</label>
+                <input type="time" class="form-control" id="hora"
+                       placeholder="Ingrese fecha" name="hora">
+            </div>
+
+            <button type="submit" class="btn btn-danger" id="btn-add-new-turno">Añadir</button>
+        </form>
+        <div id="response" style="display:none; margin-top:10px">
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="/js/registrar_turno.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+[2023-04-10 21:18:22] [INFO ] [OdontologoService:33] Se ha creado el usuario por defecto 'admin' 
+[2023-04-10 21:18:22] [INFO ] [OdontologoService:39] Se ha creado el usuario por defecto 'user' 
+[2023-04-10 21:19:30] [INFO ] [OdontologoService:71] El domicilio se ha guardado correctamente en la capa de servicio
+[2023-04-10 21:19:30] [INFO ] [OdontologoService:87] Se agregó correctamente el paciente en la capa de servicio
+[2023-04-10 21:19:30] [INFO ] [OdontologoService:101] Se agregó correctamente el paciente: Facundo
+[2023-04-10 21:19:35] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-10 21:19:35] [INFO ] [OdontologoService:69] Se listaron correctamente los pacientes
+[2023-04-10 21:19:36] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-10 21:19:36] [INFO ] [OdontologoService:83] Se encontró correctamente el paciente: 1
+[2023-04-10 21:19:44] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-10 21:19:44] [INFO ] [OdontologoService:83] Se encontró correctamente el paciente: 1
+[2023-04-10 21:20:03] [INFO ] [OdontologoService:91] Se agregó correctamente el odontologo en la capa de servicio
+[2023-04-10 21:20:03] [INFO ] [OdontologoService:101] Se agregó correctamente el odontologo: Juan
+[2023-04-10 21:20:08] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-10 21:20:08] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-10 21:20:20] [INFO ] [OdontologoService:85] Se agregó correctamente el turno en la capa de servicio
+[2023-04-10 21:20:20] [INFO ] [OdontologoService:101] Se agregó correctamente el turno
+[2023-04-10 21:20:22] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-10 21:20:22] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-10 22:47:20] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-10 22:47:20] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-10 22:47:24] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-10 22:47:24] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-10 22:47:25] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-10 22:47:25] [INFO ] [OdontologoService:81] Se encontró correctamente el paciente: 1
+[2023-04-10 22:47:33] [INFO ] [OdontologoService:132] Se modificó el domicilio correctamente en la capa de servicio
+[2023-04-10 22:47:33] [INFO ] [OdontologoService:167] Se modificó correctamente el paciente en la capa de servicio
+[2023-04-10 22:47:33] [INFO ] [OdontologoService:117] Se modificó correctamente el paciente: 1
+[2023-04-10 22:47:37] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-10 22:47:37] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-10 22:47:43] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-10 22:47:43] [INFO ] [OdontologoService:81] Se encontró correctamente el paciente: 1
+[2023-04-10 22:47:50] [INFO ] [OdontologoService:132] Se modificó el domicilio correctamente en la capa de servicio
+[2023-04-10 22:47:50] [INFO ] [OdontologoService:167] Se modificó correctamente el paciente en la capa de servicio
+[2023-04-10 22:47:50] [INFO ] [OdontologoService:117] Se modificó correctamente el paciente: 1
+[2023-04-10 22:47:52] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-10 22:47:52] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-10 22:47:57] [ERROR] [OdontologoService:143] Hubo el siguiente error en la capa de controller de paciente: could not execute statement; SQL [n/a]; constraint ["FK4OKCQR9IQT2IW6XHY1PPSMO3L: PUBLIC.TURNOS FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTES(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from pacientes where id=? [23503-214]]
+[2023-04-10 22:48:02] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-10 22:48:02] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-10 22:48:07] [INFO ] [OdontologoService:170] Se encontró correctamente el turno en la capa de servicio
+[2023-04-10 22:48:07] [INFO ] [OdontologoService:82] Se encontró correctamente el turno: 1
+[2023-04-11 23:44:31] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-11 23:44:31] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-11 23:44:34] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-11 23:44:34] [INFO ] [OdontologoService:81] Se encontró correctamente el paciente: 1
+[2023-04-11 23:44:36] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-11 23:44:36] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-11 23:44:42] [INFO ] [OdontologoService:111] Se listaron correctamente los pacientes en la capa de servicio
+[2023-04-11 23:44:42] [INFO ] [OdontologoService:67] Se listaron correctamente los pacientes
+[2023-04-11 23:44:49] [INFO ] [OdontologoService:194] Se encontró correctamente el paciente en la capa de servicio: 1
+[2023-04-11 23:44:49] [INFO ] [OdontologoService:81] Se encontró correctamente el paciente: 1
+[2023-04-11 23:44:53] [ERROR] [OdontologoService:183] No se encontró el paciente con el ID especificado
+[2023-04-11 23:44:53] [ERROR] [OdontologoService:84] Hubo el siguiente error en la capa de controller de paciente: No se encontró el paciente con el ID especificado
+[2023-04-11 23:45:01] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-11 23:45:01] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-11 23:45:02] [INFO ] [OdontologoService:169] Se encontró correctamente el odontólogo en la capa de servicio: 1
+[2023-04-11 23:45:02] [INFO ] [OdontologoService:82] Se encontró correctamente el odontologo: 1
+[2023-04-11 23:45:05] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-11 23:45:05] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-11 23:45:07] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-11 23:45:07] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-11 23:45:17] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-11 23:45:17] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-11 23:45:19] [INFO ] [OdontologoService:170] Se encontró correctamente el turno en la capa de servicio
+[2023-04-11 23:45:19] [INFO ] [OdontologoService:82] Se encontró correctamente el turno: 1
+[2023-04-11 23:45:26] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-11 23:45:26] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-11 23:45:44] [ERROR] [OdontologoService:43] El nombre del paciente no puede estar vacío o ser nulo
+[2023-04-11 23:45:44] [ERROR] [OdontologoService:102] Hubo el siguiente error en la capa de controller de paciente: El nombre del paciente no puede estar vacío o ser nulo
+[2023-04-12 18:32:25] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-12 18:32:25] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-12 18:32:27] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-12 18:32:27] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-12 18:32:30] [INFO ] [OdontologoService:169] Se encontró correctamente el odontólogo en la capa de servicio: 1
+[2023-04-12 18:32:30] [INFO ] [OdontologoService:82] Se encontró correctamente el odontologo: 1
+[2023-04-12 18:32:35] [INFO ] [OdontologoService:145] Se modificó correctamente el odontólogo en la capa de servicio
+[2023-04-12 18:32:35] [INFO ] [OdontologoService:119] Se modificó correctamente el odontologo: 1
+[2023-04-12 18:33:20] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-12 18:33:20] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-12 18:33:34] [INFO ] [OdontologoService:170] Se encontró correctamente el turno en la capa de servicio
+[2023-04-12 18:33:34] [INFO ] [OdontologoService:82] Se encontró correctamente el turno: 1
+[2023-04-12 18:33:35] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-12 18:33:35] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-12 18:33:41] [INFO ] [OdontologoService:170] Se encontró correctamente el turno en la capa de servicio
+[2023-04-12 18:33:41] [INFO ] [OdontologoService:82] Se encontró correctamente el turno: 1
+[2023-04-12 18:33:56] [INFO ] [OdontologoService:141] Se modificó correctamente el turno en la capa de servicio
+[2023-04-12 18:33:56] [ERROR] [OdontologoService:124] Hubo el siguiente error en la capa de controller de turno: could not execute statement; SQL [n/a]; constraint [FK4OKCQR9IQT2IW6XHY1PPSMO3L]
+[2023-04-12 18:34:04] [INFO ] [OdontologoService:141] Se modificó correctamente el turno en la capa de servicio
+[2023-04-12 18:34:04] [ERROR] [OdontologoService:124] Hubo el siguiente error en la capa de controller de turno: could not execute statement; SQL [n/a]; constraint [FK4OKCQR9IQT2IW6XHY1PPSMO3L]
+[2023-04-12 18:34:13] [INFO ] [OdontologoService:39] Se listaron correctamente los turnos en la capa de servicio
+[2023-04-12 18:34:13] [INFO ] [OdontologoService:68] Se listaron correctamente los turnos
+[2023-04-12 18:34:19] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-12 18:34:19] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-12 18:34:28] [INFO ] [OdontologoService:91] Se agregó correctamente el odontologo en la capa de servicio
+[2023-04-12 18:34:28] [INFO ] [OdontologoService:101] Se agregó correctamente el odontologo: Facundo
+[2023-04-12 18:34:30] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-12 18:34:30] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-12 18:34:41] [INFO ] [OdontologoService:169] Se encontró correctamente el odontólogo en la capa de servicio: 2
+[2023-04-12 18:34:41] [INFO ] [OdontologoService:82] Se encontró correctamente el odontologo: 2
+[2023-04-12 18:34:48] [INFO ] [OdontologoService:169] Se encontró correctamente el odontólogo en la capa de servicio: 1
+[2023-04-12 18:34:48] [INFO ] [OdontologoService:82] Se encontró correctamente el odontologo: 1
+[2023-04-12 18:35:19] [INFO ] [OdontologoService:50] Se listaron correctamente los odontólogos en la capa de servicio
+[2023-04-12 18:35:19] [INFO ] [OdontologoService:67] Se listaron correctamente los odontologos
+[2023-04-12 18:46:08] [INFO ] [OdontologoService:169] Se encontró correctamente el odontólogo en la capa de servicio: 1
+[2023-04-12 18:46:08] [INFO ] [OdontologoService:82] Se encontró correctamente el odontologo: 1
+[2023-04-12 18:46:22] [ERROR] [OdontologoService:158] No se encontró el odontólogo con el ID especificado
+[2023-04-12 18:46:22] [ERROR] [OdontologoService:85] Hubo el siguiente error en la capa de controller de odontologo: No se encontró el odontólogo con el ID especificado
+[2023-04-12 18:46:30] [ERROR] [OdontologoService:158] No se encontró el odontólogo con el ID especificado
+[2023-04-12 18:46:30] [ERROR] [OdontologoService:85] Hubo el siguiente error en la capa de controller de odontologo: No se encontró el odontólogo con el ID especificado
